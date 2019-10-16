@@ -1,0 +1,21 @@
+﻿.bar.bar-assertive {
+		background-color: $dark-red;
+
+		.icon {
+				position: absolute;
+				top: 5px;
+				left: 0px;
+		}
+
+		.title {
+				text-align: center;
+		}
+}
+
+.bar-logo {
+		background-position: top left;
+		background-color: #007A4E !important;
+		background-size: contain;
+		background-image: url("../images/logo.png") !important;
+}
+

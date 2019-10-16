@@ -1,0 +1,41 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "XWALK_VERSION": "23+",
+            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+            "XWALK_MODE": "embedded",
+            "XWALK_MULTIPLEAPK": "true",
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "nl.masc.degemeenschapreparatie"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,11 @@
+{
+  "android": {
+    "release": {
+      "alias": "werepair",
+      "keystore": "./van-schaik-release-key.keystore",
+      "keystoreType": "",
+      "password": "geheimevanschaikkey",
+      "storePassword": "geheimevanschaikkey"
+    }
+  }
+}

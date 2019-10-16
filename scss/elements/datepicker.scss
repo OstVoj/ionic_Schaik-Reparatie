@@ -1,0 +1,26 @@
+﻿.ionic_datepicker_popup{
+    .popup-body {
+        .selected_date_full {
+            background-color: $dark-red !important;
+        }
+        .month_select, .year_select {
+            border-color: $dark-green !important;
+        }
+        .month_select:after, .year_select:after {
+            color: $dark-green !important;
+        }
+        .button-clear {
+            color: $dark-green !important;
+        }
+        .selected_date {
+            background-color: $dark-green !important;
+        }
+        .today {
+            border-color: $dark-green !important;
+        }
+    }
+    .popup-buttons button {
+        background-color: $dark-red !important;
+        border: none;
+    }
+} 

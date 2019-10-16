@@ -1,0 +1,17 @@
+﻿<ion-view view-title="{{ title }}">
+    <ion-content>
+        <div class="main-content">
+            <div class="list">
+                <a class="item" ng-repeat="(key, option) in options" ng-click="selectOption(key)">
+                    <strong ng-if="option.title">{{ Strings.wizard[option.title] }}</strong>
+                    <strong ng-if="option.title === undefined">{{ Strings.wizard[key] }}</strong>
+                    <br />
+                    <span class="extra-black" ng-if="option.subTitle">{{ Strings.wizard[option.subTitle] }}</span>
+                </a>
+                <a class="item" ng-if="other" ng-click="selectOther()">
+                    <strong>{{ Strings.wizard.other }}</strong>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,28 @@
+﻿<ion-view view-title="{{ Strings.appointment.confirm }}">
+	<ion-content>
+		<div class="main-content">
+			<div class="list">
+				<div class="item item-selection">
+					<strong>{{ location }}</strong>
+				</div>
+				<div class="item" ng-show="hasDate">
+					<i class="icon icon-block ion-calendar icon-green"></i>
+					<strong>{{ dateString }}</strong>
+				</div>
+				<div class="item item-input item-select" ng-show="hasDate">
+					<i class="icon icon-block ion-clock icon-green"></i>
+					<strong>{{ timeString }}</strong>
+				</div>
+				<div class="item" ng-show="image">
+					<i class="icon icon-block ion-camera icon-green"></i>
+					<img ng-src="data:image/jpeg;base64,{{ image }}" />
+				</div>
+				<div class="item">
+					<i class="icon icon-block ion-document-text icon-green"></i>
+					<strong>{{ notes || '&nbsp;' }}</strong>
+				</div>
+			</div>
+			<input type="submit" class="button button-block button-assertive" ng-click="createAppointment(date, startTime, notes, image)" value="{{ Strings.appointment.submit }}" />
+		</div>
+	</ion-content>
+</ion-view>

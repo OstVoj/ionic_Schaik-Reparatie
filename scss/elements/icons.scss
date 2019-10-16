@@ -1,0 +1,19 @@
+﻿.icon-block {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+
+    &.icon-green {
+        background-color: $dark-green;
+    }
+
+    &.icon-red {
+        background-color: $dark-red;
+    }
+}

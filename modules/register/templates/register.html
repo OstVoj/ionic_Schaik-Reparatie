@@ -1,0 +1,59 @@
+﻿<ion-view view-title="{{ Strings.titles.register }}">
+    <ion-content>
+        <img class="banner" src="images/banner.jpg" />
+        <form class="main-content">
+            <div class="list">
+                <div class="item item-divider item-divider-green">
+                    {{ Strings.form.personalInfo }}
+                </div>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-person icon-green"></i>
+                    <input type="text" ng-model="registration.firstName"
+                           placeholder="{{ Strings.registration.firstName }}">
+                </label>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-person-stalker icon-green"></i>
+                    <input type="text" ng-model="registration.surname"
+                           placeholder="{{ Strings.registration.surname }}">
+                </label>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-at icon-green"></i>
+                    <input type="email" ng-model="registration.email"
+                           placeholder="{{ Strings.registration.email }}">
+                </label>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-ios-telephone icon-green"></i>
+                    <input type="tel" ng-model="registration.phone"
+                           placeholder="{{ Strings.registration.phone }}">
+                </label>
+                <div class="item item-divider item-divider-red">
+                    {{ Strings.form.address }}
+                </div>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-home icon-red"></i>
+                    <input type="text" ng-model="registration.street"
+                           placeholder="{{ Strings.registration.street }}">
+                </label>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-pound icon-red"></i>
+                    <input type="text" ng-model="registration.houseNumber"
+                           placeholder="{{ Strings.registration.houseNumber }}">
+                </label>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-paper-airplane icon-red"></i>
+                    <input type="text" ng-model="registration.zipcode"
+                           placeholder="{{ Strings.registration.zipcode }}">
+                </label>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-ios-location icon-red"></i>
+                    <input type="text" ng-model="registration.city"
+                           placeholder="{{ Strings.registration.city }}">
+                </label>
+            </div>
+
+            <input type="submit" class="button button-block button-assertive" ng-click="submitForm(registration)" value="{{ Strings.form.validate }}" />
+
+            <a class="button button-block button-balanced" ng-click="skipForm()" ng-if="hasRegistration === false">{{ Strings.form.skip }}</a>
+        </form>
+    </ion-content>
+</ion-view>

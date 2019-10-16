@@ -1,0 +1,32 @@
+﻿<ion-view view-title="{{ title }}">
+    <ion-content>
+        <div class="main-content">
+            <div class="list">
+                <div class="item item-selection">
+                    <strong>{{ selection }}</strong>
+                </div>
+                <div class="item">
+                    <i class="icon icon-block ion-calendar icon-green"></i>
+                    <strong>{{ Strings.appointment.notPlannable }}</strong>
+                </div>
+                <div class="item" ng-show="image">
+                    <img ng-src="data:image/jpeg;base64,{{ image }}" />
+                </div>
+                <a class="item" ng-click="addPhoto()">
+                    <i class="icon icon-block ion-camera icon-green"></i>
+                    <strong>{{ Strings.appointment.addPhoto }}</strong>
+                </a>
+                <label class="item item-input">
+                    <i class="icon icon-block ion-document-text icon-green"></i>
+                    <textarea placeholder="{{ Strings.appointment.notes }}" ng-model="notes"></textarea>
+                </label>
+                <label class="item item-input" ng-hide="hasPhone">
+                    <i class="icon icon-block ion-ios-telephone icon-green"></i>
+                    <input type="tel" ng-model="phone"
+                           placeholder="{{ Strings.registration.phone }}">
+                </label>
+            </div>
+            <input type="submit" class="button button-block button-assertive" ng-click="createMail(notes, image, phone)" value="{{ Strings.appointment.confirm }}" />
+        </div>
+    </ion-content>
+</ion-view>

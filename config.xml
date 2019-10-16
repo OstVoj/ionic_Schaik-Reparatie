@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget defaultlocale="en-US" id="nl.masc.degemeenschapreparatie" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+    <name>van Schaik BV</name>
+    <description>Reparatie App voor Woningbouwstichting de Gemeenschap</description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">Masc Software</author>
+    <content src="index.html" />
+    <access origin="http://api.vanschaik.md41" />
+    <access origin="http://api.werepair.masc3.nl" />
+    <allow-intent href="tel:*" />
+    <vs:features />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="Fullscreen" value="True" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
+    <icon height="58" platform="ios" src="res/icons/ios/icon-small-2x.png" width="58" />
+    <icon height="40" platform="ios" src="res/icons/ios/icon-40.png" width="40" />
+    <icon height="80" platform="ios" src="res/icons/ios/icon-40-2x.png" width="80" />
+    <icon height="50" platform="ios" src="res/icons/ios/icon-50.png" width="50" />
+    <icon height="100" platform="ios" src="res/icons/ios/icon-50-2x.png" width="100" />
+    <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
+    <icon height="114" platform="ios" src="res/icons/ios/icon-2x.png" width="114" />
+    <icon height="60" platform="ios" src="res/icons/ios/icon-60.png" width="60" />
+    <icon height="120" platform="ios" src="res/icons/ios/icon-60-2x.png" width="120" />
+    <icon height="180" platform="ios" src="res/icons/ios/icon-60-3x.png" width="180" />
+    <icon height="72" platform="ios" src="res/icons/ios/icon-72.png" width="72" />
+    <icon height="144" platform="ios" src="res/icons/ios/icon-72-2x.png" width="144" />
+    <icon height="76" platform="ios" src="res/icons/ios/icon-76.png" width="76" />
+    <icon height="152" platform="ios" src="res/icons/ios/icon-76-2x.png" width="152" />
+    <splash height="480" platform="ios" src="res/screens/ios/screen-iphone-portrait.png" width="320" />
+    <splash height="960" platform="ios" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
+    <splash height="1136" platform="ios" src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+    <splash height="1334" platform="ios" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" />
+    <splash height="2208" platform="ios" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" />
+    <splash height="1024" platform="ios" src="res/screens/ios/screen-ipad-portrait.png" width="768" />
+    <splash height="2048" platform="ios" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" />
+    <icon platform="android" qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png" />
+    <icon platform="android" qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png" />
+    <icon platform="android" qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png" />
+    <icon platform="android" qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
+    <icon platform="android" qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
+    <icon platform="android" qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
+    <splash platform="android" qualifier="ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+    <splash platform="android" qualifier="mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+    <splash platform="android" qualifier="hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+    <splash platform="android" qualifier="xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+    <plugin name="cordova-plugin-device" version="1.1.2" />
+    <plugin name="cordova-plugin-compat" version="1.0.0" />
+    <plugin name="cordova-plugin-network-information" version="1.2.1" />
+    <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <plugin name="ionic-plugin-keyboard" version="2.2.1" />
+    <plugin name="cordova-plugin-whitelist" version="1.2.2" />
+    <plugin name="cordova-sqlite-storage" version="1.4.5" />
+    <plugin name="cordova-plugin-camera" version="2.3.0" />
+    <preference name="target-device" value="handset" />
+</widget>

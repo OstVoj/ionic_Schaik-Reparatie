@@ -1,0 +1,108 @@
+﻿.list {
+    margin-top: 5px;
+
+    .item {
+        background-color: $main-green;
+        margin-bottom: 5px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 25px;
+        border: none;
+        color: black;
+        white-space: initial;
+
+        .icon {
+            position: absolute;
+            top: 3px;
+            left: 5px;
+        }
+
+        img {
+            margin: auto;
+            max-height: 250px;
+            max-width: 250px;
+        }
+
+        &.item-input {
+            padding: 5px;
+            padding-left: 50px;
+            .icon {
+                top: 5px;
+            }
+            input {
+                background-color: white;
+                padding-left: 5px;
+                margin-right: 5px;
+                border: 1px solid black;
+                border-radius: 3px;
+            }
+            textarea {
+                background-color: white;
+                padding: 5px;
+                margin-right: 5px;
+                border: 1px solid black;
+                border-radius: 3px;
+                height: 100px;
+                resize: none;
+            }
+        }
+
+        &.item-select {
+            height: 40px;
+            .icon {
+                top: 3px;
+            }
+            select {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                max-width: 100%;
+                direction: ltr;
+                border: 1px solid black;
+                border-radius: 3px;
+            }
+        }
+
+        &.item-repair {
+            .icon {
+                top: 14px;
+            }
+        }
+
+        &.item-selection {
+            background: white;
+            border-top: 1px $dark-red solid;
+            border-bottom: 1px $dark-red solid;
+            color: $dark-red;
+        }
+
+        &.item-disabled {
+            background-color: #ccc;
+
+            .icon {
+                background-color: #aaa;
+            }
+        }
+    }
+
+    .item-divider {
+        color: white;
+        font-size: 18px;
+
+        &.item-divider-red {
+            background-color: $dark-red;
+        }
+
+        &.item-divider-green {
+            background-color: $dark-green;
+        }
+
+        &:not(:first-child) {
+            margin-top: 5px;
+        }
+    }
+}
+
+img + .list, img + * > .list:first-child {
+    margin-top: 0;
+}

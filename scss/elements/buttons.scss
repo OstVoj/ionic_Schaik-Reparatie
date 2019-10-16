@@ -1,0 +1,16 @@
+﻿.button {
+    border-radius: 0;
+
+    &.button-assertive {
+        background-color: $dark-red;
+    }
+
+    &.button-balanced {
+        background-color: $dark-green;
+        border-color: $main-green;
+    }
+
+    &.back-button {
+        width: 25px;
+    }
+}
